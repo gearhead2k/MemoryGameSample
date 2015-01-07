@@ -1,7 +1,13 @@
-﻿@section SPAViews {
-    @Html.Partial("_Home")
+﻿
+<p>Nothing here {{'yet' + '!'}}</p>
+
+<div class="view-container">
+    <div ng-view class="view-frame"></div>
+</div>
+
+@section SPAViews {
+
 }
-@section Scripts{
-    @Scripts.Render("~/bundles/knockout")
+@section head{
     @Scripts.Render("~/bundles/app")
 }

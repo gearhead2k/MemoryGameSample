@@ -1,0 +1,17 @@
+﻿
+<div>
+    <div class="panel col-lg-2">
+        This is the controls
+    </div>
+    <div class="panel col-lg-10">
+        <div data-ng-repeat="card in cards" id="{{card.name}}" class="click panel col-lg-2">
+            {{card.name}}
+            <div class="front">
+                <img ng-src="/Content/img/back.jpg" />
+            </div>
+            <div class="back">
+                <img ng-src="/Content/img/front.jpg" />
+            </div>
+        </div>
+    </div>
+</div>
