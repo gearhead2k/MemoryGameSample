@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace Demo3.Models
+﻿namespace MemoryGame.Engine.Models
 {
+    using System.Collections.Generic;
+
     public class Board
     {
         private List<Card> _pieces = new List<Card>(); 
         public List<Card> Pieces
         {
-            get { return _pieces; }
-            set { _pieces = value; }
+            get { return this._pieces; }
+            set { this._pieces = value; }
         }
 
         public Board()
@@ -19,8 +16,8 @@ namespace Demo3.Models
             int imgIndex = 1;
             for (int i = 1; i <= 30; i++)
             {
-                if (IsOdd(i))
-                    _pieces.Add(new Card()
+                if (this.IsOdd(i))
+                    this._pieces.Add(new Card()
                     {
                         Id = i,
                         Pair = i + 1,
@@ -29,7 +26,7 @@ namespace Demo3.Models
                     });
                 else
                 {
-                    _pieces.Add(new Card()
+                    this._pieces.Add(new Card()
                     {
                         Id = i,
                         Pair = i - 1,
@@ -39,7 +36,7 @@ namespace Demo3.Models
                     imgIndex++;
                 }
             }
-            _pieces.Shuffle();
+            this._pieces.Shuffle();
 
         }
 

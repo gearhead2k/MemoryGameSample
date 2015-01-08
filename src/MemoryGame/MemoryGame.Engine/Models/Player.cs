@@ -1,18 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace Demo3.Models
+﻿namespace MemoryGame.Engine.Models
 {
+    using System;
+    using System.Collections.Generic;
+
     public class Player
     {
         public Player(string name, string hash)
         {
-            Name = name;
-            Hash = hash;
-            Id = Guid.NewGuid().ToString("d");
-            Matches = new List<int>();
+            this.Name = name;
+            this.Hash = hash;
+            this.Id = Guid.NewGuid().ToString("d");
+            this.Matches = new List<int>();
         }
 
         public string ConnectionId { get; set; }
