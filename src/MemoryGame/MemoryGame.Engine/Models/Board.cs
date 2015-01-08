@@ -1,6 +1,7 @@
 ﻿namespace MemoryGame.Engine.Models
 {
     using System.Collections.Generic;
+    using MemoryGame.Engine.List;
 
     public class Board
     {

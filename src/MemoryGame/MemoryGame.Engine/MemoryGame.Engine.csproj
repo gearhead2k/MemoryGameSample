@@ -64,6 +64,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameStructures\GameHub.cs" />
+    <Compile Include="GameStructures\GameState.cs" />
     <Compile Include="List\ListUtilities.cs" />
     <Compile Include="Models\Board.cs" />
     <Compile Include="Models\Card.cs" />
